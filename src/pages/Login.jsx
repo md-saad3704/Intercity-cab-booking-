@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { signInWithEmailAndPassword, signInWithPopup, sendPasswordResetEmail } from "firebase/auth"; // ✅ Import Reset Function
+import { signInWithEmailAndPassword, signInWithPopup, sendPasswordResetEmail } from "firebase/auth";
 import { auth, provider } from "../utils/firebase";
 import { FaGoogle } from "react-icons/fa";
 import "../styles/auth.css";
-import Navbar from "../components/Navbar"; // ✅ Import Navbar
-import Footer from "../components/Footer"; // ✅ Import Footer  
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer"; 
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -63,8 +63,6 @@ const Login = () => {
   };
   return (
     <>
-      {/* <Navbar /> */}
-       {/* ✅ Navbar Integrated Directly into Home Page */}
                   <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
                     <div className="container">
                       <Link className="navbar-brand fw-bold" to="/">🚖 Cab Booking</Link>
@@ -80,8 +78,7 @@ const Login = () => {
           <form onSubmit={handleLogin}>
             <input type="email" className="login-input" placeholder="Enter your email" value={email} onChange={(e) => setEmail(e.target.value)} required />
             <input type="password" className="login-input" placeholder="Enter your password" value={password} onChange={(e) => setPassword(e.target.value)} required />
-
-            {/* ✅ Forgot Password Link Positioned to Right */}
+            
             <div className="forgot-password">
               <button type="button" onClick={handleForgotPassword}>Forgot Password?</button>
             </div>
