@@ -12,7 +12,7 @@ const Navbar = () => {
       if (currentUser) {
         setUser(currentUser);
       } else {
-        setUser(null); // Ensures proper logout handling
+        setUser(null); 
       }
     });
     return () => unsubscribe();
@@ -28,7 +28,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
       <div className="container">
-        {/* Brand */}
+        
         <Link className="navbar-brand fw-bold" to="/Home2">🚖 Cab Booking</Link>
 
         {/* Mobile Toggle */}
