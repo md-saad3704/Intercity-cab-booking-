@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import "../styles/Home2.css";
-import Footer from "../components/Footer"; // ✅ Import Footer
+import Footer from "../components/Footer";
 
 const cityOptions = ["Delhi", "Mumbai", "Kolkata", "Chennai", "Bangalore", "Hyderabad", "Ahmedabad", "Pune", "Lucknow"];
 
@@ -32,7 +32,7 @@ const Home2 = () => {
 
   const handleSearch = () => {
     navigate("/cabSelection", {
-      state: { departure, arrival, pickup, dropoff, date, passengers }, // ✅ Pass all details to the next page
+      state: { departure, arrival, pickup, dropoff, date, passengers },
     });
   };
 
