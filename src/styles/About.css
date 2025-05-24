@@ -1,0 +1,37 @@
+.about-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.about-text {
+  font-size: 18px;
+  color: #333;
+  margin-top: 10px;
+}
+
+.mission-title, .values-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+}
+
+.about-list li {
+  padding: 8px;
+  background: #f4f4f4;
+  border-radius: 5px;
+  margin: 5px;
+}

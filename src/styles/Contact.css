@@ -1,0 +1,36 @@
+.contact-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.contact-box {
+  padding: 15px;
+  background: #f4f4f4;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.faq-list {
+  margin-top: 20px;
+}
+
+.faq-item {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+.faq-item h4 {
+  font-size: 20px;
+  color: #333;
+}

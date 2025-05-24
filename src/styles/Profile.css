@@ -1,0 +1,116 @@
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px;
+  background-color: #f8f9fa;
+}
+
+.profile-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 450px;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #007bff;
+  margin-bottom: 15px;
+}
+
+.profile-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.profile-section {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 450px;
+  margin-top: 20px;
+}
+
+.profile-list {
+  list-style: none;
+  padding: 0;
+}
+
+.profile-list li {
+  padding: 10px;
+  background: #f4f4f4;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.profile-list li:hover {
+  background: #e0e0e0;
+}
+
+/* Booking Status */
+.status {
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.status.completed {
+  color: #28a745;
+}
+
+.status.cancelled {
+  color: #dc3545;
+}
+
+.status.scheduled {
+  color: #ffc107;
+}
+
+/* Account Settings */
+.settings {
+  text-align: center;
+}
+
+.settings-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 5px;
+}
+
+.settings-btn.logout {
+  background-color: #dc3545;
+}
+
+.settings-btn:hover {
+  opacity: 0.8;
+}
+
+/* Confirmation Messages */
+.settings-info {
+  font-size: 14px;
+  color: #666;
+  margin-top: 8px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .profile-card, .profile-section {
+    width: 90%;
+  }
+}

@@ -1,0 +1,79 @@
+.confirmation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.confirmation-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 500px;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.confirmation-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #28a745;
+  margin-bottom: 15px;
+}
+
+.confirmation-text {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.confirmation-check {
+  font-size: 20px;
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.guidelines-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.guidelines-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.guidelines-list li {
+  padding: 10px;
+  background: #f4f4f4;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.confirmation-btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.confirmation-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Fade-in Effect */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

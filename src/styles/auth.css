@@ -1,0 +1,111 @@
+/* Full-Screen Background with Gradient */
+.login-container, .signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* background: linear-gradient(#f2deff, #f3f3f3); */
+}
+
+/* Glassmorphism Card */
+.login-card, .signup-card {
+  background: rgba(255, 255, 255, 0.658);
+  backdrop-filter: blur(20px);
+  padding: 40px;
+  border-radius: 20px;
+  width: 450px;
+  text-align: center;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.522);
+  color: rgb(0, 0, 0);
+}
+
+/* Inputs */
+.login-input, .signup-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+}
+
+.login-input::placeholder, .signup-input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Login & Signup Buttons */
+.login-button, .signup-button {
+  width: 100%;
+  padding: 12px;
+  background: #4defbc;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.3s ease;
+}
+
+.login-button:hover, .signup-button:hover {
+  background: #00ffbb;
+}
+
+/* Google Sign-In Button */
+.google-button {
+  width: 100%;
+  padding: 12px;
+  background: #31fbf4;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+}
+
+.google-button:hover {
+  background: #00d5ff;
+}
+
+/* Links */
+.login-links, .signup-links {
+  margin-top: 20px;
+}
+
+.login-links a, .signup-links a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 14px;
+  font-style: oblique;
+  font-weight: 600;
+}
+
+.login-links a:hover, .signup-links a:hover {
+  text-decoration: underline;
+}
+
+/* Forgot Password Link Alignment */
+
+.forgot-password {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.forgot-password button {
+  background: none;
+  border: none;
+  color: #007bff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.forgot-password button:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,227 @@
+/* ✅ Global Styles */
+body {
+  background: linear-gradient(to right, #a7c9f9, #a7daf3);
+  color: #000;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden; /* ✅ Prevent horizontal scrolling */
+}
+
+.cab-selection-container {
+  max-width: 100vw;
+  margin: auto;
+  text-align: center;
+  padding: 3vh 4vw;
+}
+
+/* ✅ Cab List */
+.cab-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  margin-top: 2vh;
+  width: 100%;
+}
+
+/* ✅ Cab Card */
+.cab-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* ✅ Ensures smooth wrapping on smaller screens */
+  padding: 2vh;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(0.8vh);
+  border-radius: 1.2vh;
+  border: 0.1vh solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0vh 0.6vh 1vh rgba(0, 0, 0, 0.2);
+  font-size: 1.8vh;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  min-height: 16vh;
+}
+
+/* ✅ Labels, Arrow & Timing in One Row */
+.cab-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* ✅ Ensures proper structure on small screens */
+  gap: 2vw;
+  width: 100%;
+}
+
+.label-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  min-width: 100px;
+}
+
+.label {
+  font-size: 2.6vh;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ✅ Timings Just Below Labels */
+.cab-time {
+  font-size: 2vh;
+  text-align: center;
+  margin-top: 0.5vh;
+}
+
+/* ✅ Travel Duration Below Timings */
+.cab-duration {
+  font-size: 2vh;
+  margin-top: 1vh;
+  text-align: center;
+}
+
+/* ✅ Facilities Section Below Travel Duration */
+.cab-facilities {
+  display: flex;
+  justify-content: center;
+  gap: 1vw;
+  flex-wrap: wrap;
+  margin-top: 1.2vh;
+}
+
+/* ✅ Facilities Layout Fix */
+.facility-tag {
+  display: flex;
+  align-items: center;
+  background: rgba(135, 120, 120, 0.2);
+  padding: 0.8vh 1.2vw;
+  border-radius: 0.6vh;
+  font-size: 1.5vh;
+  gap: 0.4vw;
+}
+
+/* ✅ Fare & Button Section (Aligned Right) */
+.cab-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 140px;
+  text-align: center;
+}
+
+/* ✅ Hover Effects for Fare */
+.cab-fare {
+  font-size: 2.2vh;
+  font-weight: bold;
+  margin-bottom: 1vh;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* .cab-fare:hover {
+  color: #ff0000;
+  transform: scale(1.05);
+} */
+
+/* ✅ Interactive Button */
+.btn-primary {
+  background: #ffcc00;
+  color: black;
+  font-weight: bold;
+  border: none;
+  padding: 1.2vh 1.6vw;
+  font-size: 1.8vh;
+  cursor: pointer;
+  border-radius: 0.6vh;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #ffdb4d;
+  transform: scale(1.1);
+  color: black;
+}
+
+/* ✅ Custom Horizontal Arrow */
+.custom-horizontal-arrow {
+  width: 10vw;
+  height: 0.4vh;
+  background-color: black;
+  position: relative;
+  margin: 0 1vw;
+}
+
+.custom-horizontal-arrow::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -0.8vh;
+  transform: translateY(-50%);
+  border-top: 1vh solid transparent;
+  border-bottom: 1vh solid transparent;
+  border-left: 1.5vh solid black;
+}
+
+/* ✅ Fully Responsive Layout */
+@media (max-width: 768px) {
+  .cab-item {
+    flex-direction: column; /* ✅ Ensures perfect vertical alignment */
+    align-items: center; 
+    width: 95vw;
+  }
+
+  /* .cab-info {
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    gap: 3vw;
+  } */
+
+  /* .cab-facilities {
+    justify-content: center;
+    flex-wrap: wrap;
+  } */
+
+  .cab-right {
+    width: 100%;
+    position: static;
+    text-align: center;
+    margin-top: 2vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .label {
+    font-size: 2.2vh;
+  }
+
+  .cab-time,
+  .cab-duration,
+  .facility-tag 
+  {
+    font-size: vh;
+  }
+  .cab-fare {
+    font-size: 3vh;
+  }
+
+  .btn-primary {
+    font-size: 2vh;
+    padding: 1vh 1.4vw;
+  }
+
+  .custom-horizontal-arrow {
+    width: 18vw;
+  }
+
+  .cab-selection-container {
+    padding: 2vh 2vw;
+  }
+
+  .cab-item {
+    width: 95vw;
+    max-width: 100%; /* ✅ Prevents overflow */
+  }
+}
