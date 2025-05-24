@@ -1,13 +1,10 @@
-/* Full-Screen Background with Gradient */
 .login-container, .signup-container {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  /* background: linear-gradient(#f2deff, #f3f3f3); */
 }
 
-/* Glassmorphism Card */
 .login-card, .signup-card {
   background: rgba(255, 255, 255, 0.658);
   backdrop-filter: blur(20px);
@@ -90,8 +87,6 @@
 .login-links a:hover, .signup-links a:hover {
   text-decoration: underline;
 }
-
-/* Forgot Password Link Alignment */
 
 .forgot-password {
   text-align: right;
