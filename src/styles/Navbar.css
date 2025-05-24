@@ -78,7 +78,6 @@
   color: white;
 }
 
-/* Responsive Navbar */
 @media screen and (max-width: 768px) {
   .navbar {
     text-align: center;
