@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import Navbar from "../components/Navbar"; // ✅ Navbar included
+import Navbar from "../components/Navbar";
 import "../styles/PassengerForm.css";
 import Footer from "../components/Footer";
 
 const PassengerForm = () => {
   const location = useLocation();
-  const navigate = useNavigate(); // ✅ Navigation setup
-  const tripData = location.state || {}; // ✅ Get trip details dynamically
+  const navigate = useNavigate();
+  const tripData = location.state || {};
 
   const selectedPassengers = tripData?.passengers || 1;
   const [passengers, setPassengers] = useState([]);
@@ -40,7 +40,7 @@ const PassengerForm = () => {
 
   const handleProceed = () => {
     if (isFormComplete) {
-      navigate("/payment"); // ✅ Redirects to Payment page
+      navigate("/payment");
     } else {
       alert("Please fill in all passenger details before proceeding.");
     }
