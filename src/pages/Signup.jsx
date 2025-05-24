@@ -4,7 +4,7 @@ import { createUserWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import { auth, provider } from "../utils/firebase";
 import { FaGoogle } from "react-icons/fa";
 import "../styles/auth.css";
-import Footer from "../components/Footer"; // ✅ Import Footer
+import Footer from "../components/Footer";
 
 const Signup = () => {
   const [email, setEmail] = useState("");
@@ -56,8 +56,6 @@ const Signup = () => {
 
   return (
     <>
-      {/* <Navbar /> */}
-       {/* ✅ Navbar Integrated Directly into Home Page */}
             <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
               <div className="container">
                 <Link className="navbar-brand fw-bold" to="/">🚖 Cab Booking</Link>
