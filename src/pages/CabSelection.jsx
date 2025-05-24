@@ -1,10 +1,10 @@
 import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { FaClock, FaMoneyBillWave, FaRoad, FaSnowflake, FaMapMarkedAlt, FaMusic, FaWifi, FaCarSide } from "react-icons/fa";
-import { MdArrowForward } from "react-icons/md"; // ✅ Custom arrow icon
-import Navbar from "../components/Navbar"; // ✅ Import Navbar component
+import { MdArrowForward } from "react-icons/md"; 
+import Navbar from "../components/Navbar"; 
 import "../styles/CabSelection.css";
-import Footer from "../components/Footer"; // ✅ Import Footer component
+import Footer from "../components/Footer"; 
 
 const cityDistances = {
   "Delhi-Mumbai": 1400,
@@ -20,8 +20,6 @@ const baseFarePerKm = 1.5;
 
 const facilities = [
   { name: "AC", icon: <FaSnowflake /> },
-  // { name: "GPS", icon: <FaMapMarkedAlt /> },
-  // { name: "Music System", icon: <FaMusic /> },
   { name: "Wi-Fi", icon: <FaWifi /> },
   { name: "Comfort Seats", icon: <FaCarSide /> },
 ];
@@ -55,7 +53,7 @@ const CabSelection = () => {
 
   return (
     <>
-      <Navbar /> {/* ✅ Navbar added at the top */}
+      <Navbar />
       <div className="cab-selection">
         <div className="cab-selection-container">
           <h2>Select Your Cab</h2>
@@ -71,13 +69,13 @@ const CabSelection = () => {
                           <span className="label">Departure</span>
                           <span className="cab-time"><FaClock /> {cab.departure}</span>
                         </div>
-                        <span className="custom-horizontal-arrow"></span> {/* ✅ Custom horizontal arrow */}
+                        <span className="custom-horizontal-arrow"></span> 
                         <div className="label-container">
                           <span className="label">Arrival</span>
                           <span className="cab-time"><FaClock /> {cab.arrival}</span>
                         </div>
                       </div>
-                      {/* <span className="cab-duration"><FaRoad /> Travel Time: {cab.duration}</span> */}
+                      
                       <div className="cab-facilities">
                         {facilities.map((facility, idx) => (
                           <span key={idx} className="facility-tag">{facility.icon} {facility.name}</span>
