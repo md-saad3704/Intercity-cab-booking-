@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden; /* ✅ Prevent horizontal scrolling */
+  overflow-x: hidden;
 }
 
 .cab-selection-container {
@@ -30,7 +30,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* ✅ Ensures smooth wrapping on smaller screens */
+  flex-wrap: wrap;
   padding: 2vh;
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(0.8vh);
@@ -44,12 +44,12 @@ body {
   min-height: 16vh;
 }
 
-/* ✅ Labels, Arrow & Timing in One Row */
+
 .cab-info {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap; /* ✅ Ensures proper structure on small screens */
+  flex-wrap: wrap;
   gap: 2vw;
   width: 100%;
 }
@@ -68,21 +68,21 @@ body {
   text-align: center;
 }
 
-/* ✅ Timings Just Below Labels */
+
 .cab-time {
   font-size: 2vh;
   text-align: center;
   margin-top: 0.5vh;
 }
 
-/* ✅ Travel Duration Below Timings */
+
 .cab-duration {
   font-size: 2vh;
   margin-top: 1vh;
   text-align: center;
 }
 
-/* ✅ Facilities Section Below Travel Duration */
+
 .cab-facilities {
   display: flex;
   justify-content: center;
@@ -91,7 +91,7 @@ body {
   margin-top: 1.2vh;
 }
 
-/* ✅ Facilities Layout Fix */
+
 .facility-tag {
   display: flex;
   align-items: center;
@@ -102,7 +102,7 @@ body {
   gap: 0.4vw;
 }
 
-/* ✅ Fare & Button Section (Aligned Right) */
+
 .cab-right {
   display: flex;
   flex-direction: column;
@@ -112,7 +112,7 @@ body {
   text-align: center;
 }
 
-/* ✅ Hover Effects for Fare */
+
 .cab-fare {
   font-size: 2.2vh;
   font-weight: bold;
@@ -120,12 +120,6 @@ body {
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
-/* .cab-fare:hover {
-  color: #ff0000;
-  transform: scale(1.05);
-} */
-
-/* ✅ Interactive Button */
 .btn-primary {
   background: #ffcc00;
   color: black;
@@ -144,7 +138,7 @@ body {
   color: black;
 }
 
-/* ✅ Custom Horizontal Arrow */
+
 .custom-horizontal-arrow {
   width: 10vw;
   height: 0.4vh;
@@ -164,25 +158,13 @@ body {
   border-left: 1.5vh solid black;
 }
 
-/* ✅ Fully Responsive Layout */
+
 @media (max-width: 768px) {
   .cab-item {
-    flex-direction: column; /* ✅ Ensures perfect vertical alignment */
+    flex-direction: column;
     align-items: center; 
     width: 95vw;
   }
-
-  /* .cab-info {
-    flex-direction: column; 
-    align-items: center;
-    text-align: center;
-    gap: 3vw;
-  } */
-
-  /* .cab-facilities {
-    justify-content: center;
-    flex-wrap: wrap;
-  } */
 
   .cab-right {
     width: 100%;
@@ -222,6 +204,6 @@ body {
 
   .cab-item {
     width: 95vw;
-    max-width: 100%; /* ✅ Prevents overflow */
+    max-width: 100%;
   }
 }
