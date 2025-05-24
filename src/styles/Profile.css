@@ -58,7 +58,6 @@
   background: #e0e0e0;
 }
 
-/* Booking Status */
 .status {
   font-weight: bold;
   padding: 3px 8px;
@@ -77,7 +76,6 @@
   color: #ffc107;
 }
 
-/* Account Settings */
 .settings {
   text-align: center;
 }
@@ -101,14 +99,12 @@
   opacity: 0.8;
 }
 
-/* Confirmation Messages */
 .settings-info {
   font-size: 14px;
   color: #666;
   margin-top: 8px;
 }
 
-/* Responsive Design */
 @media screen and (max-width: 768px) {
   .profile-card, .profile-section {
     width: 90%;
