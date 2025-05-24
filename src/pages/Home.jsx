@@ -39,7 +39,6 @@ const Home = () => {
 
   return (
     <>
-      {/* ✅ Navbar Integrated Directly into Home Page */}
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
         <div className="container">
           <Link className="navbar-brand fw-bold" to="/">🚖 Cab Booking</Link>
@@ -150,6 +149,8 @@ const Home = () => {
         </div>
       </motion.div>
       </div>
+      
+      {/*Footer */}
       <footer className="footer bg-dark text-light">
       <div className="footer-container">
         {/* Company Info */}
