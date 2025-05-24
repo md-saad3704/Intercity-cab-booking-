@@ -9,12 +9,11 @@ const Profile = () => {
   const [showEdit, setShowEdit] = useState(false);
   const [showPasswordChange, setShowPasswordChange] = useState(false);
 
-  // Dummy user data (Replace with actual API data later)
   const user = {
     name: "Muhammad",
     email: "muhammad@example.com",
     contact: "+91 9876543210",
-    profilePic: "https://via.placeholder.com/120", // Replace with actual image URL
+    profilePic: "https://via.placeholder.com/120",
     bookings: [
       { id: 1, date: "22 May 2025", from: "Lucknow", to: "Delhi", fare: "₹600", status: "Completed" },
       { id: 2, date: "18 May 2025", from: "Lucknow", to: "Kanpur", fare: "₹250", status: "Cancelled" },
