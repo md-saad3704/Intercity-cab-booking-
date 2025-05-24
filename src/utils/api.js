@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "https://your-backend-api.com"; // Replace with actual API URL
+const API_BASE_URL = "https://your-backend-api.com";
 
 // Fetch available cabs based on city selection
 export const fetchCabs = async (departure, arrival) => {
