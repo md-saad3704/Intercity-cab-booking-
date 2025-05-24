@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/Payment.css";
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer"; // Import Footer
+import Footer from "../components/Footer";
 
 const Payment = () => {
   const [paymentMethod, setPaymentMethod] = useState("");
