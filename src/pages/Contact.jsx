@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Contact.css";
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer"; // ✅ Import Footer   
+import Footer from "../components/Footer";
 
 const Contact = () => {
   return (
@@ -39,8 +39,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-
-      {/* ✅ Render Footer Correctly */}
+      
       <Footer />
     </>
   );
