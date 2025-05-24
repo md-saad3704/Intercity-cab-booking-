@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Footer.css"; // Assuming you have a CSS file for styling
+import "../styles/Footer.css"; 
 
 const Footer = () => {
   return (
@@ -11,7 +11,7 @@ const Footer = () => {
           <p>Your trusted ride partner for safe and reliable travel.</p>
         </div>
 
-        {/* Quick Links */}
+        
         <div className="footer-section">
           <h3>Quick Links</h3>
           <ul className="footer-links">
@@ -22,14 +22,14 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Contact Info */}
+        
         <div className="footer-section">
           <h3>Contact Us</h3>
           <p>Email: support@cabbooking.com</p>
           <p>Phone: +91 9876543210</p>
         </div>
 
-        {/* Social Media */}
+        
         <div className="footer-section">
           <h3>Follow Us</h3>
           <div className="social-icons">
@@ -39,7 +39,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Legal */}
+        
         <div className="footer-bottom">
           <p>&copy; 2025 Cab Booking | All Rights Reserved</p>
           <p><a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms & Conditions</a></p>
