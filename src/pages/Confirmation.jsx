@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/Confirmation.css"; // 
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer"; // ✅ Import Footer  
+import Footer from "../components/Footer"; 
 
 const Confirmation = () => {
   return (
